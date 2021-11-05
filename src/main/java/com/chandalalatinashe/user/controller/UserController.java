@@ -26,12 +26,12 @@ public class UserController {
         return userService.saveUser(user);
     }
 
-    @GetMapping("/{id}")
+/*    @GetMapping("/{id}")
     public User findUserById(@PathVariable("id") Long id){
         log.info("Inside findUserById method of UserController");
         return userService.findUserById(id);
 
-    }
+    }*/
 
     @GetMapping("/{id}")
     public ResponseTemplateVO getUserWithDepartment(@PathVariable("id") Long userId){

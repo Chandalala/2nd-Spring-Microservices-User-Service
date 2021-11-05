@@ -44,7 +44,7 @@ public class UserService {
 
         //Get department from the department micro-service
         Department department = restTemplate.getForObject(
-                        "http://localhost:8080/departments/"+user.getDeptId()
+                        "http://DEPARTMENT-SERVICE/departments/"+user.getDeptId()
                             , Department.class);
 
 
